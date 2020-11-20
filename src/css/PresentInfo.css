@@ -1,0 +1,19 @@
+.PresentInfo-div{
+    float: left;
+    margin-left: -10px;
+}
+#WeatherIcon{
+    position: relative;
+    left:125px;
+    top:-15px;
+    width:100px;
+}
+.Date{
+    position: relative;
+    top:-50px;
+}
+.Temp{
+    position: relative;
+    top:70px;
+    font-size: 60px;
+}

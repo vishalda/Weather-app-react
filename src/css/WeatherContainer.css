@@ -1,0 +1,49 @@
+.Block{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: auto;
+    padding-bottom: 10px;
+    margin-left:10%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Weather-Icon{
+    width:400px;
+}
+.form{
+    float: right;
+    margin-top: 70px;
+    
+}
+.InputBlock{
+    margin-left: -100px;
+    font-size: 20px;
+    margin-right:10px;
+    color:rgb(90, 207, 198);
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: rgb(65, 190, 180);
+    transition: 0.5s;
+}
+.InputBlock:hover{
+    border-color:  rgb(3, 82, 75);
+}
+.SubmitButton{
+    transition: 0.5s;
+    background-color: white;
+    border-top:0;
+    border-left: 0;
+    border-right:0;
+    border-bottom-color: rgb(0, 255, 242);
+    padding:5px;
+    position: relative;
+    top:-5px;
+}
+.SubmitButton:hover{
+    border-color:  rgb(3, 82, 75);
+}
+.searchIcon{
+    width:26px;
+}
