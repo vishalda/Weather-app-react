@@ -83,11 +83,12 @@ class WeatherContainer extends React.Component{
         return(
             <div className="Block">
                 <div className="container">
-                    {this.CallPresentInfo()}
-                    <form onSubmit={this.handleSubmit} className="form">
+                <form onSubmit={this.handleSubmit} className="form">
                         <input type="text" className="InputBlock" value={this.state.value} onChange={this.handleChange} />
                         <button type="submit" className="SubmitButton" ><img src={searchIcon} alt="" className="searchIcon"/></button>
                     </form>
+                    {this.CallPresentInfo()}
+                    
                     <img src={SunIcon} className="Weather-Icon" alt=""/>
                     <h3 className="display-5 text-muted">{this.state.cvalue}</h3>
                     <div>

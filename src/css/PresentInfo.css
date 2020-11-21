@@ -2,6 +2,13 @@
     float: left;
     margin-left: -10px;
 }
+@media screen and (max-width: 1100px){
+    .PresentInfo-div{
+        position: relative;
+        top:100px;
+        float:none;
+    }
+}
 #WeatherIcon{
     position: relative;
     left:125px;
