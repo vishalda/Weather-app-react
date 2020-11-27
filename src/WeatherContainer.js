@@ -36,8 +36,11 @@ class WeatherContainer extends React.Component{
                 const dailyData = data.list.filter(reading =>{
                     return reading.dt_txt.includes("09:00:00")
                 })
+                let today = new Date();
+
+                let date=(today.getFullYear() + "-"+(today.getMonth()+1) +"-"+(today.getDate()+1));
                 const firstData=dailyData.filter(reading =>{
-                    return reading.dt_txt.includes("2020-11-21")
+                    return reading.dt_txt.includes(`${date}`)
                 })
                 
                 this.setState({
@@ -83,7 +86,7 @@ class WeatherContainer extends React.Component{
         return(
             <div className="Block">
                 <div className="container">
-                <form onSubmit={this.handleSubmit} className="form">
+                    <form onSubmit={this.handleSubmit} className="form">
                         <input type="text" className="InputBlock" value={this.state.value} onChange={this.handleChange} />
                         <button type="submit" className="SubmitButton" ><img src={searchIcon} alt="" className="searchIcon"/></button>
                     </form>
